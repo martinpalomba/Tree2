@@ -1,0 +1,267 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BBE9832-E9CE-40F6-929B-A6008742DAFA}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TreeTest</AssemblyName>
+    <AssemblyOriginatorKeyFile>TreeTest.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TreeTest</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1303;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA1300</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\FileNew.ico" />
+    <Content Include="Icons\ViewRefresh.ico" />
+    <Compile Include="Common\Settings.cs" />
+    <Compile Include="Modes\ModeMemory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeMemory.Designer.cs">
+      <DependentUpon>ModeMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeMove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeMove.Designer.cs">
+      <DependentUpon>ModeMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeProperties.Designer.cs">
+      <DependentUpon>ModeProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeSerialization.Designer.cs">
+      <DependentUpon>ModeSerialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Element.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeAddTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeAddTree.Designer.cs">
+      <DependentUpon>ModeAddTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModeBase.Designer.cs">
+      <DependentUpon>ModeBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModeControl.Designer.cs">
+      <DependentUpon>ModeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeCounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeCounts.Designer.cs">
+      <DependentUpon>ModeCounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeAddElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeAddElement.Designer.cs">
+      <DependentUpon>ModeAddElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeElement.Designer.cs">
+      <DependentUpon>ModeElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeEnumerators.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeEnumerators.Designer.cs">
+      <DependentUpon>ModeEnumerators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeNode.Designer.cs">
+      <DependentUpon>ModeNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeRelationships.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeRelationships.Designer.cs">
+      <DependentUpon>ModeRelationships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modes\ModeProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modes\ModeSerialization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeAddTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeAddTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeCounts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeCounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeAddElement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeAddElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeElement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeEnumerators.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeEnumerators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeMemory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeMemory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeMove.resx">
+      <DependentUpon>ModeMove.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeNode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeRelationships.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeRelationships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modes\ModeSerialization.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeSerialization.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="TreeTest.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tree2\Tree2.csproj">
+      <Project>{476C735D-6B9E-459A-B705-711443EBE4BF}</Project>
+      <Name>Tree2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
