@@ -3,3 +3,7 @@
 ################################################################################
 
 /Tree2/bin/Release
+/Tree2/obj/Release
+/TreeTest/bin/Release
+/TreeTest/obj/Release
+/.vs/TreeTest/v15

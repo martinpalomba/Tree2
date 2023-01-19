@@ -14,4 +14,6 @@ namespace TreeTest
 			Application.Run( new MainForm() );
 		}
 	}
+
+    //svn2git svn://vsdesarrollo/Tree2  --notrunk --nobranches --notags --authors "f:\authors.txt" --verbose
 }
